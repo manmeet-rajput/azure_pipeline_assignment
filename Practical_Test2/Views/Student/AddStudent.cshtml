@@ -1,0 +1,42 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model Student
+@{
+    ViewData["Title"] = "Add Student";
+}
+<a asp-action="Index">View All Students</a>
+<h2>Add New Student</h2>
+<form method="post">
+    <table>
+        <tr>
+            <td><label asp-for="studentID">Student ID: </label></td>
+            <td><input asp-for="studentID" /></td>
+        </tr>
+        <tr>
+            <td><label asp-for="firstName">First Name: </label></td>
+            <td><input asp-for="firstName" /></td>
+        </tr>
+        <tr>
+            <td><label asp-for="lastName">Last Name: </label></td>
+            <td><input asp-for="lastName" /></td>
+        </tr>
+        <tr>
+            <td><label asp-for="gpa">GPA: </label></td>
+            <td><input asp-for="gpa" /></td>
+        </tr>
+        <tr>
+            <td><label asp-for="email">Email: </label></td>
+            <td><input asp-for="email" /></td>
+        </tr>
+        <tr>
+            <td><label asp-for="program_id">Program ID: </label></td>
+            <td><input asp-for="program_id" /></td>
+        </tr>
+        <tr>
+            <td><button type="submit">Add</button></td>
+        </tr>
+
+    </table>
+</form>
+
